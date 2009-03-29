@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Wrapper for various features of the Dom extension to provide a jQuery-like
- * API for them using the SPL ArrayObject class as a base for storage and
- * iteration.
+ * Wrapper for various features of the DOM extension to provide a subset of  
+ * features offered by the jQuery object. Uses the SPL ArrayObject class as 
+ * a base for storage and iteration.
  *
  * @author Matthew Turland <matt@ishouldbecoding.com>
  * @version 1.0
  * @see http://jquery.com
  */
-class DomQuery extends ArrayObject
+class DOMQuery extends ArrayObject
 {
     /**
      * Flag indicating whether or not DOM extension parse errors should be
