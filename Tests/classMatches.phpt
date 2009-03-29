@@ -2,8 +2,8 @@
 classMatches
 --FILE--
 <?php
-require_once '../DomQuery.php';
-$q = DomQuery::fromHtml('<html><body><p class="foo">foo test</p><p class="foo bar">foo bar test</p><p class="bar baz">bar baz test</p></body></html>');
+require_once '../DOMQuery.php';
+$q = DOMQuery::fromHtml('<html><body><p class="foo">foo test</p><p class="foo bar">foo bar test</p><p class="bar baz">bar baz test</p></body></html>');
 $q->classMatches('/^ba/')->dump();
 --EXPECT--
 Array

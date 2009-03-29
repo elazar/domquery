@@ -2,8 +2,8 @@
 ancestors
 --FILE--
 <?php
-require_once '../DomQuery.php';
-$q = DomQuery::fromHtml('<html><body><div id="test"></div></body></html>');
+require_once '../DOMQuery.php';
+$q = DOMQuery::fromHtml('<html><body><div id="test"></div></body></html>');
 $q->element('div')->ancestors()->dump();
 --EXPECT--
 Array

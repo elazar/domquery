@@ -2,8 +2,8 @@
 fromXml
 --FILE--
 <?php
-require_once '../DomQuery.php';
-$q = DomQuery::fromXml('<?xml version="1.0"?><root><child attribute="value">text</child></root>');
+require_once '../DOMQuery.php';
+$q = DOMQuery::fromXml('<?xml version="1.0"?><root><child attribute="value">text</child></root>');
 $q->dump();
 --EXPECT--
 Array

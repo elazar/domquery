@@ -2,8 +2,8 @@
 first
 --FILE--
 <?php
-require_once '../DomQuery.php';
-$q = DomQuery::fromHtml('<html><body><div id="foo"></div><div id="bar"></div><div id="baz"></div></body></html>');
+require_once '../DOMQuery.php';
+$q = DOMQuery::fromHtml('<html><body><div id="foo"></div><div id="bar"></div><div id="baz"></div></body></html>');
 $q->element('div')->first()->dump();
 --EXPECT--
 Array

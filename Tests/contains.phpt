@@ -2,8 +2,8 @@
 contains
 --FILE--
 <?php
-require_once '../DomQuery.php';
-$q = DomQuery::fromHtml('<html><body><div id="a">test at start</div><div id="b">ending test</div><div id="c">in test middle</div><div id="d">test</div><div id="e">none</div></body></html>');
+require_once '../DOMQuery.php';
+$q = DOMQuery::fromHtml('<html><body><div id="a">test at start</div><div id="b">ending test</div><div id="c">in test middle</div><div id="d">test</div><div id="e">none</div></body></html>');
 $q->contains('test')->dump();
 --EXPECT--
 Array

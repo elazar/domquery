@@ -2,8 +2,8 @@
 fromHtmlFile
 --FILE--
 <?php
-require_once '../DomQuery.php';
-$q = DomQuery::fromHtmlFile('fromHtmlFile.html');
+require_once '../DOMQuery.php';
+$q = DOMQuery::fromHtmlFile('fromHtmlFile.html');
 $q->dump();
 --EXPECT--
 Array

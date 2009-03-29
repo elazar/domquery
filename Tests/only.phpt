@@ -2,8 +2,8 @@
 only
 --FILE--
 <?php
-require_once '../DomQuery.php';
-$q = DomQuery::fromHtml('<html><body><div></div><div><span></span></div></body></html>');
+require_once '../DOMQuery.php';
+$q = DOMQuery::fromHtml('<html><body><div></div><div><span></span></div></body></html>');
 $q->only()->dump();
 --EXPECT--
 Array

@@ -2,8 +2,8 @@
 fromXmlFile
 --FILE--
 <?php
-require_once '../DomQuery.php';
-$q = DomQuery::fromXmlFile('fromXmlFile.xml');
+require_once '../DOMQuery.php';
+$q = DOMQuery::fromXmlFile('fromXmlFile.xml');
 $q->dump();
 --EXPECT--
 Array

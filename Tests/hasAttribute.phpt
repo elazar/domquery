@@ -2,8 +2,8 @@
 hasAttribute
 --FILE--
 <?php
-require_once '../DomQuery.php';
-$q = DomQuery::fromHtml('<html><body><div>foo</div><div id="test">bar</div><div>baz</div></body></html>');
+require_once '../DOMQuery.php';
+$q = DOMQuery::fromHtml('<html><body><div>foo</div><div id="test">bar</div><div>baz</div></body></html>');
 $q->hasAttribute('id')->dump();
 --EXPECT--
 Array

@@ -2,8 +2,8 @@
 attributeEndsWith
 --FILE--
 <?php
-require_once '../DomQuery.php';
-$q = DomQuery::fromHtml('<html><body><div id="foo"></div><div id="bar"></div><div id="boo"></div></body></html>');
+require_once '../DOMQuery.php';
+$q = DOMQuery::fromHtml('<html><body><div id="foo"></div><div id="bar"></div><div id="boo"></div></body></html>');
 $q->attributeEndsWith('id', 'oo')->dump();
 --EXPECT--
 Array

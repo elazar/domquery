@@ -2,8 +2,8 @@
 descendants
 --FILE--
 <?php
-require_once '../DomQuery.php';
-$q = DomQuery::fromHtml('<html><body><div id="foo"><a href="bar"><strong>baz</strong></a></div></body></html>');
+require_once '../DOMQuery.php';
+$q = DOMQuery::fromHtml('<html><body><div id="foo"><a href="bar"><strong>baz</strong></a></div></body></html>');
 $q->element('div')->descendants()->dump();
 --EXPECT--
 Array

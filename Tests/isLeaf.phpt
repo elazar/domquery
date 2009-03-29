@@ -2,8 +2,8 @@
 isLeaf
 --FILE--
 <?php
-require_once '../DomQuery.php';
-$q = DomQuery::fromHtml('<html><body><div id="a"></div></body></html>');
+require_once '../DOMQuery.php';
+$q = DOMQuery::fromHtml('<html><body><div id="a"></div></body></html>');
 $q->isLeaf()->dump();
 --EXPECT--
 Array

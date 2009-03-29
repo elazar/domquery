@@ -2,8 +2,8 @@
 elementMatches
 --FILE--
 <?php
-require_once '../DomQuery.php';
-$q = DomQuery::fromHtml('<html><body><p><a href="#">Link</a></p></body></html>');
+require_once '../DOMQuery.php';
+$q = DOMQuery::fromHtml('<html><body><p><a href="#">Link</a></p></body></html>');
 $q->elementMatches('/p|a/i')->dump();
 --EXPECT--
 Array

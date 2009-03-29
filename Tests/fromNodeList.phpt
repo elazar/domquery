@@ -2,12 +2,12 @@
 fromNodeList
 --FILE--
 <?php
-require_once '../DomQuery.php';
+require_once '../DOMQuery.php';
 $doc = new DomDocument();
 $doc->load('fromXmlFile.xml');
 $xpath = new DomXPath($doc);
 $list = $xpath->query('//child');
-$q = DomQuery::fromNodeList($list);
+$q = DOMQuery::fromNodeList($list);
 $q->dump();
 --EXPECT--
 Array

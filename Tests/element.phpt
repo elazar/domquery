@@ -2,8 +2,8 @@
 element
 --FILE--
 <?php
-require_once '../DomQuery.php';
-$q = DomQuery::fromHtml('<html><body><a href="test1">test1_link</a><div id="separator"></div><a href="test2">test2_link</a></body></html>');
+require_once '../DOMQuery.php';
+$q = DOMQuery::fromHtml('<html><body><a href="test1">test1_link</a><div id="separator"></div><a href="test2">test2_link</a></body></html>');
 $q->element('a')->dump();
 --EXPECT--
 Array
